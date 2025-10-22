@@ -14,8 +14,8 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
-from langchain.schema import Document
-from langchain.prompts import ChatPromptTemplate
+from langchain_core.documents import Document
+from langchain_core.prompts import ChatPromptTemplate
 
 # ---------------- App & Env ----------------
 st.set_page_config(page_title="RAG Chat", page_icon="🤖", layout="wide")
